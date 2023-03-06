@@ -1,7 +1,3 @@
-/*
- * Auth:Hillary Oyaro
- * File:2-strchr.c
- */
 #include "main.h"
 #include <stddef.h>
 
