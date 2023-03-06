@@ -1,22 +1,24 @@
-/*
- * Auth:Hillary Oyaro
- * File:1-memcpy.c
- */
 #include "main.h"
+
 /**
- * _memcpy - copies memory area
- * @dest: memory area to copy the bytes to
- * @src: memory area to copy the bytes from
- * @n: number of bytes to copy
+ * _memcpy - Copies @n bytes from the memory area pointed to
+ * to by @src into that pointed to by @dest.
+ * @dest: A pointer to the memory area that is needed to copy @src into.
+ * @src: The buffer source to copy characters from.
+ * @n: The number of bytes to copy from @src.
  *
- * Return: a pointer to the memory area dest
+ * Return: A pointer to the destination buffer @dest.
  */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
+	unsigned int index;
 
-		for (i = 0; i < n; i++)
-			dest[i] = src[i];
+	char *destination = dest;
 
-return (dest);
+	char *source = src;
+
+	for (index = 0; index < n; index++)
+		destination[index] = source[index];
+	return (dest);
 }
